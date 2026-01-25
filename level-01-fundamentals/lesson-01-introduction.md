@@ -41,23 +41,18 @@ graph TB
     subgraph JS["JavaScript"]
         A[Write Code] --> B[Run Code]
         B --> C{Error?}
-        C -->|Yes| D[Runtime Error<br/>App Crashes]
+        C -->|Yes| D["Runtime Error / App Crashes"]
         C -->|No| E[Success]
     end
     
     subgraph TS["TypeScript"]
         F[Write Code] --> G[Type Check]
         G --> H{Type Error?}
-        H -->|Yes| I[Compile Error<br/>Fix Before Running]
+        H -->|Yes| I["Compile Error / Fix Before Running"]
         H -->|No| J[Compile to JS]
         J --> K[Run Code]
         K --> L[Success]
     end
-    
-    style D fill:#ffebee
-    style I fill:#fff3e0
-    style E fill:#e8f5e9
-    style L fill:#e8f5e9
 ```
 
 ## Your First TypeScript Program
@@ -220,17 +215,12 @@ value = 10;
 
 ```mermaid
 graph LR
-    A[TypeScript File<br/>.ts] --> B[TypeScript Compiler<br/>tsc]
+    A["TypeScript File (.ts)"] --> B["TypeScript Compiler (tsc)"]
     B --> C{Type Check}
-    C -->|Errors| D[Show Errors<br/>Fix Code]
+    C -->|Errors| D["Show Errors / Fix Code"]
     D --> A
-    C -->|No Errors| E[JavaScript File<br/>.js]
-    E --> F[Runtime<br/>Node.js/Browser]
-    
-    style C fill:#fff4e1
-    style D fill:#ffebee
-    style E fill:#e8f5e9
-    style F fill:#e1f5ff
+    C -->|No Errors| E["JavaScript File (.js)"]
+    E --> F["Runtime (Node.js/Browser)"]
 ```
 
 ## Best Practices
@@ -425,7 +415,7 @@ console.log(user1.name); // ✅ TypeScript knows 'name' exists
 ### Issue: "Cannot find name 'console'"
 
 **Symptoms:**
-```
+```text
 Error: Cannot find name 'console'. Do you need to change your target library?
 ```
 
@@ -448,7 +438,7 @@ Error: Cannot find name 'console'. Do you need to change your target library?
 ### Issue: "File is not a module"
 
 **Symptoms:**
-```
+```text
 Error: File is not a module
 ```
 
@@ -483,7 +473,7 @@ Error: File is not a module
 ### Issue: "Cannot find module" errors
 
 **Symptoms:**
-```
+```text
 Error: Cannot find module './module' or its corresponding type declarations
 ```
 

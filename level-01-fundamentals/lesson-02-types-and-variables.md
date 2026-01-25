@@ -262,13 +262,9 @@ graph TB
     A --> C[const]
     A --> D[var]
     
-    B --> B1["✅ Block-scoped<br/>✅ Mutable<br/>✅ No hoisting issues"]
-    C --> C1["✅ Block-scoped<br/>✅ Immutable reference<br/>✅ Preferred default"]
-    D --> D1["❌ Function-scoped<br/>❌ Hoisting issues<br/>❌ Avoid in modern TS"]
-    
-    style B fill:#e8f5e9
-    style C fill:#e8f5e9
-    style D fill:#ffebee
+    B --> B1["✅ Block-scoped; ✅ Mutable; ✅ No hoisting issues"]
+    C --> C1["✅ Block-scoped; ✅ Immutable reference; ✅ Preferred default"]
+    D --> D1["❌ Function-scoped; ❌ Hoisting issues; ❌ Avoid in modern TS"]
 ```
 
 ## Type Inference
@@ -637,7 +633,7 @@ const port: number = parseInt(process.env.PORT || "3000", 10);
 ### Issue: "Type 'null' is not assignable to type 'string'"
 
 **Symptoms:**
-```
+```text
 Error: Type 'null' is not assignable to type 'string'
 ```
 
@@ -656,7 +652,7 @@ Error: Type 'null' is not assignable to type 'string'
 ### Issue: "Variable 'x' is used before being assigned"
 
 **Symptoms:**
-```
+```text
 Error: Variable 'x' is used before being assigned
 ```
 
@@ -675,7 +671,7 @@ Error: Variable 'x' is used before being assigned
 ### Issue: "Cannot redeclare block-scoped variable"
 
 **Symptoms:**
-```
+```text
 Error: Cannot redeclare block-scoped variable 'x'
 ```
 

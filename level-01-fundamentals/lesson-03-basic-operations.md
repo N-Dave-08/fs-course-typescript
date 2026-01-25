@@ -337,16 +337,12 @@ function processValue(value: string | number) {
 
 ```mermaid
 graph TB
-    A[Union Type<br/>string | number] --> B{Type Guard}
+    A["Union Type (string | number)"] --> B{Type Guard}
     B -->|typeof === 'string'| C[Type: string]
     B -->|typeof === 'number'| D[Type: number]
     
     C --> C1[Can use string methods]
     D --> D1[Can use number methods]
-    
-    style A fill:#fff4e1
-    style C fill:#e8f5e9
-    style D fill:#e8f5e9
 ```
 
 ## Comparison Operations
@@ -573,7 +569,7 @@ const formatted = formatResult(calculate(10, 3, "divide")); // "Result: 3.33"
 ### Issue: "Operator '+' cannot be applied to types 'number' and 'string'"
 
 **Symptoms:**
-```
+```text
 Error: Operator '+' cannot be applied to types 'number' and 'string'
 ```
 
