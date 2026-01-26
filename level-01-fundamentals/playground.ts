@@ -25,6 +25,6 @@ function createUser(name: string, email: string, age: number): User {
     }
 }
 
-const user1 = createUser("Bob", "bob@email.com", 27)
+const user1 = createUser("Bob", "bob@email.com", 16)
 
 console.log(user1)
