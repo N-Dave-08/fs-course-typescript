@@ -497,12 +497,12 @@ npx ts-node-dev --respawn exercises/exercise-01.ts
 
 After completing all exercises, verify:
 
-- [ ] All files compile without TypeScript errors
-- [ ] All files run and produce expected output
-- [ ] You understand the difference between `let` and `const`
-- [ ] You can use type annotations and type inference appropriately
-- [ ] You understand how TypeScript catches type errors
-- [ ] You can use type narrowing with union types
+- [X] All files compile without TypeScript errors
+- [X] All files run and produce expected output
+- [X] You understand the difference between `let` and `const`
+- [X] You can use type annotations and type inference appropriately
+- [X] You understand how TypeScript catches type errors
+- [X] You can use type narrowing with union types
 
 ## Troubleshooting
 
