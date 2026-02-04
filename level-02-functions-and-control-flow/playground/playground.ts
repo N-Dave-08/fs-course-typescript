@@ -1,41 +1,19 @@
-type CreateUserInput = {
-    email: string
-    name: string
-    age?: number
-}
+class Counter {
+    count = 0
 
-function isNonEmptyString(value: unknown): value is string {
-    return typeof value === "string" && value.trim().length > 0
-}
-
-function isValidEmail(value: unknown): value is string {
-    if (typeof value !== "string") return false
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    return emailRegex.test(value)
-}
-
-function toCreateUserInput(payload: unknown): CreateUserInput {
-    if (typeof payload !== "object" || payload === null) {
-        throw new Error("Payload must be an object")
+    increment = () => {
+        this.count++
     }
 
-    const maybe = payload as Record<string, unknown>
-
-    if (!isValidEmail(maybe.email)) throw new Error("email is required")
-    if (!isNonEmptyString(maybe.name)) throw new Error("name is required")
-
-    const age = typeof maybe.age === "number" ? maybe.age : undefined
-
-    return {
-        email: maybe.email,
-        name: maybe.name,
-        age
+    incrementMethod() {
+        this.count++
     }
 }
 
-console.log((toCreateUserInput({
-    "email": "asd@gmail.com",
-    "name": "asdasdasd",
-    "age": 27
-})))
+const c = new Counter()
+const inc1 = c.increment
+inc1()
+
+const inc2 = c.incrementMethod
+
+console.log(c.count)
