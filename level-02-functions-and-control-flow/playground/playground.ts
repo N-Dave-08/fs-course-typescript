@@ -1,19 +1,3 @@
-class Counter {
-    count = 0
+const numbers = [1, 2, 3, 4, 5]
 
-    increment = () => {
-        this.count++
-    }
-
-    incrementMethod() {
-        this.count++
-    }
-}
-
-const c = new Counter()
-const inc1 = c.increment
-inc1()
-
-const inc2 = c.incrementMethod
-
-console.log(c.count)
+numbers.forEach((n) => console.log(n))
