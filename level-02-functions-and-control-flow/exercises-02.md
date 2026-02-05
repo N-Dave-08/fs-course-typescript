@@ -615,14 +615,14 @@ npx ts-node exercises/exercise-02.ts
 
 After completing all exercises, verify:
 
-- [ ] All functions have proper type annotations
-- [ ] Optional parameters work correctly
-- [ ] Rest parameters accept variable arguments
-- [ ] Arrow functions work as expected
-- [ ] Conditional logic handles all cases
-- [ ] Loops and array methods work correctly
-- [ ] Function types are properly defined
-- [ ] Complex functions return correct results
+- [X] All functions have proper type annotations
+- [X] Optional parameters work correctly
+- [X] Rest parameters accept variable arguments
+- [X] Arrow functions work as expected
+- [X] Conditional logic handles all cases
+- [X] Loops and array methods work correctly
+- [X] Function types are properly defined
+- [X] Complex functions return correct results
 
 ## Troubleshooting
 
