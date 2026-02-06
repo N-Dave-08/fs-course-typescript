@@ -600,14 +600,14 @@ npx ts-node exercises/exercise-02.ts
 
 After completing all exercises, verify:
 
-- [ ] Objects created with proper types
-- [ ] Array operations work correctly
-- [ ] Array methods (map, filter, reduce) work
-- [ ] Nested objects accessible
-- [ ] Tuples used correctly
-- [ ] Object methods work
-- [ ] Array transformations work
-- [ ] All code is type-safe
+- [X] Objects created with proper types
+- [X] Array operations work correctly
+- [X] Array methods (map, filter, reduce) work
+- [X] Nested objects accessible
+- [X] Tuples used correctly
+- [X] Object methods work
+- [X] Array transformations work
+- [X] All code is type-safe
 
 ## Troubleshooting
 
