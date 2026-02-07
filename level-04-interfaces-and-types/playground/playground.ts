@@ -1,34 +1,31 @@
-{
-    type ApiSuccess<T> = {
-        status: "success"
-        data: T
-    }
-    type ApiError = {
-        status: "error"
-        message: string
-    }
-    type ApiResult<T> = ApiSuccess<T> | ApiError
-
-    type User = {
-        id: string
-        email: string
-    }
-
-    function handleUserResult(result: ApiResult<User>) {
-        if (result.status === "success") {
-            console.log(result.data.email)
-        } else {
-            console.log("Error: ", result.message)
-        }
-    }
-
-    const successResult: ApiResult<User> = {
-        status: "success",
-        data: {
-            id: "k12jn3",
-            email: "asd@domain.com"
-        }
-    }
-
-    handleUserResult(successResult)
+type ApiSuccess<T> = {
+    status: "success"
+    data: T
 }
+type ApiError = {
+    status: "error"
+    message: string
+    errorCode?: string
+}
+type ApiResult<T> = ApiSuccess<T> | ApiError
+
+type User = {
+    id: string
+    email: string
+}
+
+function renderUser(result: ApiResult<User>) {
+    switch (result.status) {
+        case "success":
+            return result.data.email
+        case "error":
+            return `Error: ${result.message}`
+    }
+}
+
+const errorResult: ApiResult<User> = {
+    status: "error",
+    message: "this is error"
+}
+
+console.log(renderUser(errorResult))
