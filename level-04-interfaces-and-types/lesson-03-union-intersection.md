@@ -20,7 +20,7 @@ Union and intersection types let you model these realities with compile-time saf
 
 ```mermaid
 flowchart TD
-  union[UnionType A|B] --> narrow{Narrow}
+  union("UnionType A|B") --> narrow{Narrow}
   narrow --> a[A]
   narrow --> b[B]
 ```
