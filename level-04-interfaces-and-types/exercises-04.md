@@ -460,14 +460,14 @@ npx ts-node exercises/exercise-02.ts
 
 After completing all exercises, verify:
 
-- [ ] Interfaces define object shapes
-- [ ] Optional properties work
-- [ ] Interface extension works
-- [ ] Type aliases work
-- [ ] Union types work
-- [ ] Intersection types work
-- [ ] Discriminated unions work
-- [ ] Function types work
+- [X] Interfaces define object shapes
+- [X] Optional properties work
+- [X] Interface extension works
+- [X] Type aliases work
+- [X] Union types work
+- [X] Intersection types work
+- [X] Discriminated unions work
+- [X] Function types work
 
 ## Troubleshooting
 
