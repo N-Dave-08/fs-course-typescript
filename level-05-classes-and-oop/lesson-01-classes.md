@@ -20,7 +20,7 @@ In TypeScript, class typing helps you catch invalid states early.
 
 ```mermaid
 flowchart LR
-  classDef[ClassDefinition] --> instance[Instance]
+  classDefinition[Class Definition] --> instance[Instance]
   instance --> methods[Methods]
   instance --> fields[Fields]
 ```
