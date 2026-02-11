@@ -665,14 +665,14 @@ npx ts-node exercises/exercise-02.ts
 
 After completing all exercises, verify:
 
-- [ ] Classes create instances correctly
-- [ ] Constructors work
-- [ ] Methods work
-- [ ] Inheritance works
-- [ ] Access modifiers work
-- [ ] Getters/setters work
-- [ ] Override works
-- [ ] All code is type-safe
+- [X] Classes create instances correctly
+- [X] Constructors work
+- [X] Methods work
+- [X] Inheritance works
+- [X] Access modifiers work
+- [X] Getters/setters work
+- [X] Override works
+- [X] All code is type-safe
 
 ## Troubleshooting
 
