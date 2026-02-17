@@ -390,14 +390,14 @@ npx ts-node exercises/exercise-02.ts
 
 After completing all exercises, verify:
 
-- [X] Type guards work correctly
-- [X] Custom type guards work
-- [X] Promises work
-- [X] Async/await works
-- [X] Error handling works
-- [X] Promise.all works
-- [X] Type narrowing works
-- [X] All code is type-safe
+- [ ] Type guards work correctly
+- [ ] Custom type guards work
+- [ ] Promises work
+- [ ] Async/await works
+- [ ] Error handling works
+- [ ] Promise.all works
+- [ ] Type narrowing works
+- [ ] All code is type-safe
 
 ## Troubleshooting
 
