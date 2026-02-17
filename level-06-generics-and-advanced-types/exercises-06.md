@@ -545,13 +545,13 @@ npx ts-node exercises/exercise-02.ts
 
 After completing all exercises, verify:
 
-- [ ] Generic functions work with multiple types
-- [ ] Generic classes are reusable
-- [ ] Constraints limit types appropriately
-- [ ] Utility types work correctly
-- [ ] Conditional types narrow types
-- [ ] Mapped types transform properties
-- [ ] All code is type-safe
+- [X] Generic functions work with multiple types
+- [X] Generic classes are reusable
+- [X] Constraints limit types appropriately
+- [X] Utility types work correctly
+- [X] Conditional types narrow types
+- [X] Mapped types transform properties
+- [X] All code is type-safe
 
 ## Troubleshooting
 
