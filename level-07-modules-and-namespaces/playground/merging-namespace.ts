@@ -1,14 +1,14 @@
 namespace Utils {
 	export function add(a: number, b: number) {
-		return a + b;
+		return a + b
 	}
 }
 
 namespace Utils {
 	export function subtract(a: number, b: number) {
-		return a - b;
+		return a - b
 	}
 }
 
-Utils.add(2, 2);
-Utils.subtract(3, 2);
+console.log(Utils.add(2, 2))
+console.log(Utils.subtract(2, 2))
