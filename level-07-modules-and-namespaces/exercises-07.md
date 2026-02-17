@@ -455,14 +455,14 @@ npx ts-node exercises/exercise-08/main.ts
 
 After completing all exercises, verify:
 
-- [ ] Named exports work
-- [ ] Default exports work
-- [ ] Mixed exports work
-- [ ] Type exports work
-- [ ] Re-exports work
-- [ ] Namespaces work
-- [ ] Nested namespaces work
-- [ ] Module organization works
+- [X] Named exports work
+- [X] Default exports work
+- [X] Mixed exports work
+- [X] Type exports work
+- [X] Re-exports work
+- [X] Namespaces work
+- [X] Nested namespaces work
+- [X] Module organization works
 
 ## Troubleshooting
 
