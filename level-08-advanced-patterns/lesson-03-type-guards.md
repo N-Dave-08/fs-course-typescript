@@ -20,9 +20,9 @@ To use union-specific members safely, you must **narrow** the type first.
 
 ```mermaid
 flowchart TD
-  union["UnionType A or B"] --> guard{TypeGuard}
-  guard -->|A| useA[Use A Members]
-  guard -->|B| useB[Use B Members]
+  union(("UnionType A|B")) --> guard{TypeGuard}
+  guard -->|A| useA(("Use A Members"))
+  guard -->|B| useB(("Use B Members"))
 ```
 
 ## `typeof` Narrowing
