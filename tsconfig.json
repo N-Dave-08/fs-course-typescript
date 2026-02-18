@@ -1,10 +1,10 @@
 {
 	"compilerOptions": {
 		"target": "es2024",
-		"module": "none",
+		"module": "commonjs",
 		"lib": ["ES6", "DOM"],
 		"outDir": "./dist",
-		"outFile": "dist/bundle.js",
+		// "outFile": "dist/bundle.js",
 		"rootDir": "./",
 		"strict": true,
 		"esModuleInterop": true,
@@ -14,7 +14,9 @@
 		"moduleResolution": "node",
 		"declaration": true,
 		"declarationMap": true,
-		"sourceMap": true
+		"sourceMap": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true
 	},
 	"include": ["**/*.ts"],
 	"exclude": ["node_modules", "dist"]
